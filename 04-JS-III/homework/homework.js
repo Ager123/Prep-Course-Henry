@@ -151,9 +151,9 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  let num=n.tostring();
-  if(n.charAt(0)==="9"){return true;}
-  return false; 
+  var num = n.toString();
+  if(num.charAt(0)==="9"){return true;}
+  else return false; 
   
 }
 
@@ -210,11 +210,11 @@ function breakStatement(numero) {
   var suma=numero;
   for(i=0;i<10;i++){
       suma=suma+2;
-       if(suma===i)break;
-       else array.push(suma);
+       if(suma===i){break;}
+       else {array.push(suma);}
          }
-  if(i<10) return "Se interrumpió la ejecución";
-  else return array;
+  if(i<10) {return "Se interrumpió la ejecución";}
+  else {return array;}
 
 }
 
@@ -233,8 +233,9 @@ function continueStatement(numero) {
     else {suma=suma+2;
     array.push(suma);
          }
+  }
   return array;
-}}
+}
 
 
 // No modificar nada debajo de esta línea
